@@ -1,0 +1,9 @@
+*.pyc
+*.idb
+*.nam
+*.til
+*.id0
+*.id1
+*.i64
+*.gdb_history
+dumps

