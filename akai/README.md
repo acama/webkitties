@@ -14,4 +14,6 @@ Then with the Vita browse to `http://<ipaddr>:8888`.
 In `inc/api.js` you can find the list of functions that are currently supported and some examples can be found
 in `inc/sample.js`.
 The main stuff happens in `inc/sploit.js` and `inc/rop.js`.
+
+This is what it should look like:
 <img src="https://github.com/acama/webkitties/blob/master/akai/example.png">
