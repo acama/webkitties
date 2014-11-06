@@ -24,4 +24,4 @@ thanks
 
 @yifanlu - Documentation.
 
-@josh_axey, @archaemic, <unnamed>  - Lots of useful ideas.
+@josh_axey, @archaemic, \<unnamed\>  - Lots of useful ideas.
