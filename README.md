@@ -17,3 +17,9 @@ akai 0.1
 An exploit of the webkit vuln that implements a minimal "SDK" / testing framework for the Vita. Current supported versions are 3.15 and 3.18.
 This can be useful for fuzzing functions, loading and dumping modules, exploring the file system and pretty much anything
 else that is possible to do under the privileges of the Webkit process.
+
+thanks
+-------
+@johntheropper, freebot - Helping with the exploit
+@yifanlu - Documentation
+@josh_axey, @archaemic, <unnamed>  - Lots of useful ideas
