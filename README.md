@@ -20,6 +20,6 @@ else that is possible to do under the privileges of the Webkit process.
 
 thanks
 -------
-@johntheropper, freebot - Helping with the exploit
-@yifanlu - Documentation
-@josh_axey, @archaemic, <unnamed>  - Lots of useful ideas
+@johntheropper, freebot - Helping with the exploit.
+@yifanlu - Documentation.
+@josh_axey, @archaemic, <unnamed>  - Lots of useful ideas.
